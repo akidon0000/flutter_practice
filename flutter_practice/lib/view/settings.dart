@@ -50,7 +50,7 @@ class _SettingsPageState extends State<SettingsPage> {
       ],
     );
   }
-  
+
   Widget _buildSettingsItem(String title, IconData icon) {
     return Container(
       color: CupertinoColors.white,
@@ -64,12 +64,12 @@ class _SettingsPageState extends State<SettingsPage> {
               children: [
                 Row(
                   children: [
-                    Icon(icon, size: 28),
+                    Icon(icon, size: 24, color: CupertinoColors.systemBlue),
                     SizedBox(width: 12),
-                    Text(title),
+                    Text(title, style: TextStyle(fontSize: 14, color: CupertinoColors.systemBlue)),
                   ],
                 ),
-                Icon(CupertinoIcons.right_chevron, size: 28),
+                Icon(CupertinoIcons.right_chevron, size: 24, color: CupertinoColors.systemBlue),
               ],
             ),
           ),
