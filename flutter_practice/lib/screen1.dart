@@ -5,9 +5,6 @@ class Screen1 extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title : Text("ページ(2)")
-      ),
       body : Center(
         child: TextButton(
           child: Text("ページ3へ"),
