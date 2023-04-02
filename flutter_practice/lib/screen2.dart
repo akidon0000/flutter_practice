@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class FirstPage extends StatelessWidget{
+class Screen2 extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title : Text("ページ(1)")
+        title : Text("ページ(3)")
       ),
       body : Center(
         child: TextButton(

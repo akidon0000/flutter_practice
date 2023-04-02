@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'image_list.dart';
+import 'screen0.dart';
+import 'screen1.dart';
+import 'screen2.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const ImageList(),
+      initialRoute: '/', // 初期画面を'/'とする
+      routes: {
+        '/': (context) => Screen0(), // Screen0()を'/'とする
+        '/first': (context) => Screen1(), // Screen1()を'/first'とする
+        '/second': (context) => Screen2(), // Screen2()を'/second'とする
+      },
     );
   }
 }
